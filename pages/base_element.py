@@ -1,4 +1,3 @@
-
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -31,6 +30,10 @@ class BaseElement(object):
     def attribute(self, attr_name):
         attribute = self.web_element.get_attribute(attr_name)
         return attribute
+
+    def scroll_to_elem(self):
+        self.driver.execute_script("window.scrollTo(20, document.body.scrollHeight);")
+        return None
 
     @property
     def text(self):

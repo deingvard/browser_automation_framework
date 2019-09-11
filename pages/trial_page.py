@@ -4,8 +4,8 @@ from .base_element import BaseElement
 from .base_page import BasePage
 from .locator import Locator
 
-class TrialPage(BasePage):
 
+class TrialPage(BasePage):
     url = 'https://techstepacademy.com/trial-of-the-stones'
 
     @property
